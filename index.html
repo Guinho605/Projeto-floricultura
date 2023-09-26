@@ -5,10 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link type="text/css" href="estilo.css"
-                        rel="stylesheet"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link type="text/css" href="estilo.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        /* Seus estilos CSS personalizados aqui */
+        .content-container {
+          overflow: hidden;
+        }
+
+        .main-content {
+          float: left;
+          width: 80%;
+        }
+
+        aside {
+          float: right;
+          width: 20%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,30 +30,30 @@
     </header> 
     <nav>
         <ul id="listaInicio">
-            <li id="primeiraLista"><a href="#">Home</a>  </li>
-            <li id="primeiraLista"><a href="#">Sobre</a>  </li>
-            <li id="primeiraLista"><a href="#">Arquivos</a>  </li>
-            <li id="primeiraLista"><a href="#">Contato</a>  </li>
+            <li id="primeiraLista"><a href="#">Home</a></li>
+            <li id="primeiraLista"><a href="#">Sobre</a></li>
+            <li id="primeiraLista"><a href="#">Arquivos</a></li>
+            <li id="primeiraLista"><a href="#">Contato</a></li>
         </ul>   
     </nav>
 
     <section id="intro">
         <header id="florbackground">
-            <h2 id="textoImagem">Você gosta de flores tanto quanto nós?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                incididunt cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+            <h2 id="textoImagem">Você gosta de flores<br/> tanto quanto nós?</h2>
+            <p class="textoAleatorio">Lorem ipsum dolor sit amet, consectetur adipiscing<br/> elit, sed do eiusmod tempor 
+                incididunt cupidatat non<br/> proident, sunt in culpa qui officia deserunt mollit<br/> 
                 anim id est laborum.</p>
         </header>
     </section> 
-    <div id="content">
-        <div id="mainContent">
+    <div id="content" class="content-container">
+        <div id="mainContent" class="main-content">
             <section>
                 <article>
                     <header>
-                        <h2>Este é a chamada do nosso post</h2>
-                        <p>Postado por Jadir Custodio Mendonça em 04/07 <a href="#">3 comentários</a></p>
+                        <h2 class="alinhamentoImagem">Este é a chamada do nosso post</h2>
+                        <p class="alinhamentoImagem">Postado por Jadir Custodio Mendonça em 04/07 <a href="#">3 comentários</a></p>
                     </header>         
-                    <img src="images/flower.png" id="flor">    
+                    <img class="alinhamentoTexto" src="images/flower.png" id="flor">    
                     <p id="teste">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
                             nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -68,12 +82,12 @@
             </section>  
             <section id="comentario">
                 <header>
-                    <h3>Comentários</h3>
+                    <h3 class="alinhamentoImagem">Comentários</h3>
                     <article>
                         <header>
-                            <a href="#">José Araujo Portela</a>
+                            <a class="Autores" href="#">José Araujo Portela</a>
                         </header>        
-                        <p>
+                        <p class="Autores">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                             temporanim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                             temporanim id est laborum.
@@ -83,67 +97,69 @@
                     </article>
                     <article>
                         <header>
-                            <a href="#">Maria Helena Celestino</a>
+                            <a class="Autores" href="#">Maria Helena Celestino</a>
                         </header>        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        <p class="Autores">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                             anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                             temporanim id est laborum.</p>
                     </article>
                     <article>
                         <header>
-                            <a href="#">Rubens Neves Dos Santos</a>
+                            <a class="Autores" href="#">Rubens Neves Dos Santos</a>
                         </header>        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        <p class="Autores">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                             anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                             temporanim id est laborum.</p>
                     </article>
                 </section> 
                 <form>
-                    <h3>Deixe seu comentário</h3>
-                    <p>
+                    <h3 class="alinhamentoImagem">Deixe seu comentário</h3>
+                    <p class="alinhamentoFormulario">
                         <label for="name">Nome:</label>
                         <input type="text" name="name" id="name" required />
                     </p>        
-                    <p>
+                    <p class="alinhamentoFormulario">
                         <label for="email">Email:</label>
                         <input type="email" name="email" id="email" required />
                     </p>        
-                    <p>
+                    <p class="alinhamentoFormulario">
                         <label for="website">Seu Site:</label>
                         <input type="url" name="website" id="website" required />
                     </p>        
-                    <p>
+                    <p class="alinhamentoFormulario">
                         <label for="comment">Comentário</label>
-                        <textarea name="comment" id="name" required></textarea>
+                        <textarea name="comment" id="comment" required></textarea>
                     </p>        
-                    <p>
-                        <input type="submit" value="Enviar Comentário"  />
+                    <p class="alinhamentoFormulario">
+                        <input class="botaoEnviar" type="submit" value="Enviar Comentário"  />
                     </p>        
                 </form>
         </div>
 
         <aside>
-            <section>
-                <h3>Categorias</h3>
+            <div class="container">
+                <div class="content">
+                    <p id="teste">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <section>
+                    <h3>Categorias</h3>
                     <ul>
-                        <li><a href="#">Categoria 1</a>  </li>
-                        <li><a href="#">Categoria 2</a>  </li>
-                        <li><a href="#">Categoria 3</a>  </li>
-                        <li><a href="#">Categoria 4</a>  </li>
+                        <li><a href="#">Categoria 1</a></li>
+                        <li><a href="#">Categoria 2</a></li>
+                        <li><a href="#">Categoria 3</a></li>
+                        <li><a href="#">Categoria 4</a></li>
                     </ul>   
-            
-            </section>    
-            <section>
-                <h3>Arquivos</h3>
+                </section>
+                <section>
+                    <h3>Arquivos</h3>
                     <ul>
-                        <li><a href="#">Data 1</a>  </li>
-                        <li><a href="#">Data 2</a>  </li>
-                        <li><a href="#">Data 3</a>  </li>
-                        <li><a href="#">Data 4</a>  </li>
+                        <li><a href="#">Data 1</a></li>
+                        <li><a href="#">Data 2</a></li>
+                        <li><a href="#">Data 3</a></li>
+                        <li><a href="#">Data 4</a></li>
                     </ul>   
-            
-            </section>    
-
+                </section>
+            </div>
         </aside>
     </div>    
     <footer>
@@ -160,29 +176,25 @@
                 <header>
                     <h3>Eu indico</h3>
                     <ul>
-                        <li><a href="#">Data 1</a>  </li>
-                        <li><a href="#">Data 2</a>  </li>
-                        <li><a href="#">Data 3</a>  </li>
-                        <li><a href="#">Data 4</a>  </li>
+                        <li><a href="#">Data 1</a></li>
+                        <li><a href="#">Data 2</a></li>
+                        <li><a href="#">Data 3</a></li>
+                        <li><a href="#">Data 4</a></li>
                     </ul> 
-
                 </header>
             </section> 
             <section id="popular">
                 <header>
                     <h3>Popular</h3>
                     <ul>
-                        <li><a href="#">Data 1</a>  </li>
-                        <li><a href="#">Data 2</a>  </li>
-                        <li><a href="#">Data 3</a>  </li>
-                        <li><a href="#">Data 4</a>  </li>
+                        <li><a href="#">Data 1</a></li>
+                        <li><a href="#">Data 2</a></li>
+                        <li><a href="#">Data 3</a></li>
+                        <li><a href="#">Data 4</a></li>
                     </ul> 
-
                 </header>
             </section> 
         </div>    
-
     </footer>             
-    
 </body>
 </html>

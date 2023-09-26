@@ -1,37 +1,90 @@
 h1 {
-    color: rgb(243, 12, 12);
-    margin-top: 50px;
-    margin-left: 200px;
-  }
-  ul#listaInicio {
-    list-style: none;
-    padding: 10px; 
-    background-color: black;
-    text-align: left;
-  }
-  ul li#primeiraLista
-  {
-    
-    display: inline-block; 
-    margin-left: 150px;
-  }
-  header#florbackground
-  {
-    margin-top: 20px;
-    background-image:url('../images/intro_flower.png');
-    max-width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 8px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 350px;
-  }
-  h2#textoImagem{
-    text-align: left;
-    color:white;
-    margin-left: -100;
-    margin-left: 0;
-    margin-top: 20px;
-  }
+  color: rgb(243, 12, 12);
+  margin-top: 50px;
+  margin-left: 200px;
+}
+ul#listaInicio {
+  list-style: none;
+  padding: 10px; 
+  background-color: black;
+  text-align: left;
+}
+ul li#primeiraLista
+{
+  
+  display: inline-block; 
+  margin-left: 150px;
+}
+header#florbackground
+{
+  margin-top: 20px;
+  background-image:url('../images/intro_flower.png');
+  max-width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+}
+h2#textoImagem{
+  text-align: left;
+  color:white;
+  padding-left: 40px;
+  padding-top: 20px;
+  font-size: 40px;
+}
+.textoAleatorio
+{
+  text-align: left;
+  color: white;
+  padding-left: 40px;
+  padding-top: 90px;
+}
+.alinhamentoImagem
+{
+padding-left: 371px;
+padding-top: 20px;
+}
+.alinhamentoTexto
+{
+padding-left: 371px;
+padding-top: 20px;
+float: left; /* Faz a imagem flutuar à esquerda */
+margin-right: 10px; /* Adiciona margem à direita da imagem para espaço */
+max-width: 40%; /* Define uma largura máxima para a imagem */
+}
+.Autores
+{
+padding-left: 380px;
+padding-top: 20px;
+
+}
+.alinhamentoFormulario
+{
+text-align: center;
+}
+.botaoEnviar
+{
+background-color: rgb(55, 168, 89);
+}
+
+.content-container {
+overflow: hidden; /* Limpa a flutuação */
+}
+
+aside {
+float: right;
+width: 30%; /* Aumente a largura conforme necessário */
+margin-left: -10px; /* Ajuste a margem esquerda conforme necessário */
+/* Outros estilos, se necessário */
+background-color: gray;
+}
+
+.main-content {
+float: left;
+width: 70%; /* Ajuste a largura do conteúdo principal para acomodar o tamanho do aside */
+/* Outros estilos, como margem direita, se necessário */
+}
+
