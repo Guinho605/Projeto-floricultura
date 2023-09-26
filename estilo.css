@@ -1,0 +1,37 @@
+h1 {
+    color: rgb(243, 12, 12);
+    margin-top: 50px;
+    margin-left: 200px;
+  }
+  ul#listaInicio {
+    list-style: none;
+    padding: 10px; 
+    background-color: black;
+    text-align: left;
+  }
+  ul li#primeiraLista
+  {
+    
+    display: inline-block; 
+    margin-left: 150px;
+  }
+  header#florbackground
+  {
+    margin-top: 20px;
+    background-image:url('../images/intro_flower.png');
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+  }
+  h2#textoImagem{
+    text-align: left;
+    color:white;
+    margin-left: -100;
+    margin-left: 0;
+    margin-top: 20px;
+  }
