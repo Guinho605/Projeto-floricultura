@@ -1,90 +1,368 @@
+body{
+  margin: 0;
+}
+
+
+/* Estilo do titulo*/
 h1 {
-  color: rgb(243, 12, 12);
-  margin-top: 50px;
-  margin-left: 200px;
-}
-ul#listaInicio {
-  list-style: none;
-  padding: 10px; 
-  background-color: black;
-  text-align: left;
-}
-ul li#primeiraLista
-{
-  
-  display: inline-block; 
-  margin-left: 150px;
-}
-header#florbackground
-{
-  margin-top: 20px;
-  background-image:url('../images/intro_flower.png');
-  max-width: 60%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 30px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 350px;
-}
-h2#textoImagem{
-  text-align: left;
-  color:white;
-  padding-left: 40px;
-  padding-top: 20px;
-  font-size: 40px;
-}
-.textoAleatorio
-{
-  text-align: left;
+    color: rgb(186, 238, 88);
+    margin-left: 100px;
+    font-family: Calibri;
+  }
+
+  #logo{
+    width: 40px;
+    height: 40px;
+  }
+
+/* Estilo do menu */
+  #menu {
+    list-style: none;
+    padding: 13px; 
+    background-color: #b2d416;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+
+  #primeiraLista
+  {
+    text-decoration: none;
+    display: inline-block; 
+  }
+
+  #primeiraLista a{
+    text-decoration: none;
+    color:white;
+    margin-inline-start: 215px;
+  }
+
+  #primeiraLista a:hover{
+    color:#588c14;
+  }
+/* titulo com background */
+  #florbackground{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #textoImagem{
+    color:white;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 250px;
+  }
+
+  .textoAleatorio{
   color: white;
-  padding-left: 40px;
-  padding-top: 90px;
+  margin-left: 20px; /* Em vez de padding-left */
+  margin-top: 70px; /* Em vez de padding-top */
+  font-family: Arial, Helvetica, sans-serif; /* fontes */
+  font-size: 13px;
 }
-.alinhamentoImagem
-{
-padding-left: 371px;
-padding-top: 20px;
-}
-.alinhamentoTexto
-{
-padding-left: 371px;
-padding-top: 20px;
-float: left; /* Faz a imagem flutuar à esquerda */
-margin-right: 10px; /* Adiciona margem à direita da imagem para espaço */
-max-width: 40%; /* Define uma largura máxima para a imagem */
-}
-.Autores
-{
-padding-left: 380px;
-padding-top: 20px;
-
-}
-.alinhamentoFormulario
-{
-text-align: center;
-}
-.botaoEnviar
-{
-background-color: rgb(55, 168, 89);
+/* Estilo texto e imagem da esquerda */
+#mainContent {
+  width: 820px;
+  height: 1000px;
+  float: left;
+ 
 }
 
-.content-container {
-overflow: hidden; /* Limpa a flutuação */
+.alinhamentoCentro{
+    margin-left: 160px;
+    font-family:sans-serif;
+    margin-top: 2px;
 }
 
+.alinhamentoCentro2{
+    margin-left: 160px;
+    font-family:sans-serif;
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-top: 2px;
+}
+.alinhamentoCentro2 a{
+
+  font-family:sans-serif;
+  font-size: 13px;
+  margin-bottom: 20px;
+  margin-top: 2px;
+  color:rgb(165, 165, 134);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.alinhamentoCentro2 a:hover{
+color: black;
+}
+
+.imagemFlutuante{
+    float:left;
+    margin-left: 160px;
+    margin-right: 20px;
+}
+
+#teste{
+  font-family:Arial, Helvetica, sans-serif;
+  margin-left: 160px;
+  font-size: 15px;
+  margin-right: 20px;
+  text-align:justify;
+}
+
+/* Estilo das linhas horizontais*/
+#linha{
+  margin-left: 160px;
+  width: 640px;
+}
+
+/* Estilo dos comentarios*/
+#comentario{
+  margin-left: 160px;
+  margin-right: 20;
+}
+
+h3{
+  font-family:'Candara';
+  font-size: 20px;
+}
+
+#coment{
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align:justify;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  height: 100px;
+  padding-top: 20px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+ }
+
+#coment header a{
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  padding-left: 20px;
+
+}
+
+#coment header a:hover{
+  color: white;
+}
+
+#coment p{
+  margin-top: 5px;
+  width: 93%;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+/* Ainda não descobri oq é*/
+.clearfix {
+    height: 100%; /* Define a altura do elemento pai */
+}
+
+
+
+/* Estilo para o conteúdo principal */
 aside {
-float: right;
-width: 30%; /* Aumente a largura conforme necessário */
-margin-left: -10px; /* Ajuste a margem esquerda conforme necessário */
-/* Outros estilos, se necessário */
-background-color: gray;
+    width:447px; /* Defina a largura desejada */
+    height: 1000px;
+    padding-left: 20px; /* Ajuste o espaçamento interno conforme necessário */
+    float: right; /* Alinhe a aside à direita*/
+    background-color: rgb(108, 153, 82);
+    border-radius: 30px;
+  
+} 
+
+/* Estilo de todas as categorias*/
+#categoria{
+  border-radius: 20px;
+  width: 290px;
 }
 
-.main-content {
-float: left;
-width: 70%; /* Ajuste a largura do conteúdo principal para acomodar o tamanho do aside */
-/* Outros estilos, como margem direita, se necessário */
+#categoria h3{
+  margin-left: 30px;
+  padding-top: 10px;
+  color: antiquewhite;
 }
 
+#categoria a{
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: antiquewhite;
+}
+
+#categoria a:hover{
+  color:#9bd450;
+}
+
+#arquivos{
+  border-radius: 20px;
+  width: 290px;
+}
+
+#arquivos h3{
+  margin-left: 30px;
+  padding-top: 10px;
+  color:antiquewhite;
+}
+
+#arquivos a{
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: antiquewhite;
+}
+
+#arquivos a:hover{
+  color:#9bd450;
+}
+
+#blogroll{
+  border-radius: 20px;
+  width: 290px;
+  color: antiquewhite;
+}
+
+#blogroll h3{
+  margin-left: 30px;
+  padding-top: 10px;
+  color: antiquewhite;
+}
+
+#blogroll a{
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: antiquewhite;
+}
+
+#blogroll a:hover{
+  color:#9bd450;
+}
+
+#popular{
+  border-radius: 20px;
+  width: 290px;
+}
+
+#popular h3{
+  margin-left: 30px;
+  padding-top: 10px;
+  color: antiquewhite;
+}
+
+#popular a{
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: antiquewhite;
+}
+
+#popular a:hover{
+  color:#9bd450;
+}
+
+li{
+  list-style: none;
+}
+
+/* Estilo do formulario*/
+
+#formulario{
+margin-left: 160px;
+width: 800px;
+}
+
+#formulario label{
+  margin-left: 250px;
+  }
+
+  #formulario input{
+  width: 300px;
+  height: 40px;
+     padding: 5px 13px;
+     margin: 3px 0;
+     display: inline-block;
+     border: 1px solid #588c14;
+     box-sizing: border-box;
+     border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #formulario button{
+    width: 150px;
+    height: 40px;
+       padding: 5px 13px;
+       margin: 3px 340px;
+       display: inline-block;
+       box-sizing: border-box;
+       border: 1px solid #588c14;
+       border-radius: 20px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     background-color: #588c14;
+    color:white;
+    }
+
+    #formulario button:hover {
+     background-color:#b2d416;
+        }
+
+  #formulario input:hover {
+    border: 3px solid #b2d416;
+      }
+
+  #formulario textarea{
+    width: 300px;
+    height: 150px;
+    padding: 10px 13px;
+    margin: 3px 3px;
+    display: inline-block;
+    border: 1px solid #588c14;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #formulario textarea:hover {
+    border: 3px solid #b2d416;
+  }
+
+
+/* Estilo do sobre*/
+#sobre{
+  margin-top: 550px;
+  float: left;
+  width: 1000px;
+  margin-left: 160px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin-bottom: 20px;
+}
+
+#sobre h3{
+margin-left: 20px;
+}
+
+#sobre p{
+  margin-left: 20px;
+  }
+
+  #linha2{
+    margin-left: 0;
+    width: 1000px;
+  }
+
+/* Estilo do roda pé*/
+  footer{
+    background-color: #b2d416;
+    float: left;
+    width: 1300px;
+    height: 40px;
+    text-align: center;
+    font-size:13px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
